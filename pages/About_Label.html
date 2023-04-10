@@ -18,7 +18,7 @@
     <section>
       <nav>
         <ul>
-                <li><h1><img src="../assets/Asset 1@18x.png" width="50px" height="50px">STREAM</h1></li>
+          <li><logo><img src="../assets/Logo/stream_logo_white.png" height="50px"></logo></li>
                 <li><a href="#">Recent Releases</a></li>
                 <li><a href="#">Popular Albums</a></li>
                 <li class="active"><a href="../index.html"><b>About Label</b></a></li>
@@ -26,11 +26,13 @@
                 <li>
                   <div class="search-container">
                     <form action="/search">
-                      <input type="text" placeholder="Search...">
-                      <button type="submit"><i class="fa fa-search"></i></button>
+                      <div class="input-group">
+                        <input type="text" placeholder="Search..." style="background-color: transparent;">
+                        <img src="../assets/Icons/other/icons8-search-100.png" width="40px"></img>
+                      </div>
                     </form>
-                  </div>
-                 </li>
+                  </div>               
+                </li>
         </ul>
       </nav>
     </section>
@@ -41,24 +43,68 @@
           <div class="col">
             <div class="box-left">
               <div class="left">
-              <p>This is us</p>
+              <h5>This Is Us</h5>
             <h2>STREAM</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quibusdam recusandae, voluptates eligendi omnis tempora labore voluptate sit rem quidem at! Ab, architecto velit. Eum voluptatem consequuntur debitis obcaecati rerum.</p>
+            
+            <div class="contact"> 
+              <div class="info" style="display: inline-block;">
+              <p><img src="../assets/Icons/contact/email_icon.svg" width="50px">info@stream.co</p>
+            </div>
+            <div class="call" style="display: inline-block;">
+              <p><img src="../assets/Icons/contact/phone_icon.svg">+27 12 345 6789</p>
+            </div>
+          </div>
+           
           </div>
           <div class="box"></div>
-      </div></div>
+          </div>
+        </div>
               
           <div class="col">
-            <div class="box-right"></div>
+            <div class="box-right">
+              <h3>GET IN TOUCH</h3>
+              <div class="form">
+                <form action="#" method="post">
+                  <label for="name"></label>
+                  <input type="text" id="name" name="name" required placeholder="Your Name"::placeholder { color: white; }>
+                  
+                  <label for="email"></label>
+                  <input type="email" id="email" name="email" required placeholder="Your Email"::placeholder { color: white; }>
+                  
+                  <label for="subject"></label>
+                  <select id="subject" name="subject">
+                    <option value="Subject">Subject</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Technical Support">Technical Support</option>
+                    <option value="Sales Inquiry">Sales Inquiry</option>
+                  </select>
+                  
+                  <label for="message"></label>
+                  <textarea id="message" name="message" rows="4" cols="50" required placeholder="Your Message"::placeholder { color: white; }></textarea>
+                  
+                  <div class="Play">
+                    <input type="submit" value="PLAY">
+                  </div>
+                </form>
+              </div>
+              
+            </div>
             </div>
           </div>
         </div>
       </header>
     </section>
 
-    <section>
+    <section style="padding-top: 60px;">
       <footer>
-        <p><b>STREAM @ 2021</b></p>
-    </footer>
+        <p style="padding-left: 122px;"><b>STREAM @ 2021</b></p>
+        <div class="socials">
+          <img src="../assets/Icons/social/youtube_icon.svg" width="50px">
+          <img src="../assets/Icons/social/facebook_icon.svg"width="50px">
+          <img src="../assets/Icons/social/twitter_icon.svg" width="50px">
+          <img src="../assets/Icons/social/instagram_icon.svg" width="50px">
+        </div>
+      </footer>
     </section>
 </body>

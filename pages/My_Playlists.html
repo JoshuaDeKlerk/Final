@@ -17,19 +17,21 @@
     <section>
         <nav>
           <ul>
-                  <li><h1><img src="../assets/Asset 1@18x.png" width="50px" height="50px">STREAM</h1></li>
-                  <li><a href="#">Recent Releases</a></li>
+            <li><logo><img src="../assets/Logo/stream_logo_white.png" height="50px"></logo></li>
+                  <li><a href="../index.html">Recent Releases</a></li>
                   <li><a href="#">Popular Albums</a></li>
-                  <li class="active"><a href="About_Label.html">About Label</a></li>
-                  <li><a href="../index.html"><b>My Playlists</b></a></li>
+                  <li><a href="About_Label.html">About Label</a></li>
+                  <li class="active"><a href="../index.html"><b>My Playlists</b></a></li>
                   <li>
                     <div class="search-container">
                       <form action="/search">
-                        <input type="text" placeholder="Search...">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <div class="input-group">
+                          <input type="text" placeholder="Search..." style="background-color: transparent;">
+                          <img src="../assets/Icons/other/icons8-search-100.png" width="40px"></img>
+                        </div>
                       </form>
-                    </div>
-                   </li>
+                    </div>               
+                  </li>
           </ul>
         </nav>
       </section>
@@ -38,6 +40,7 @@
             <p><h3>My Playlists</h3></p>
             <div class="box"></div>
             <div class="box2">
+                <div class="content">
                 <ul class="heads">
                     <li><b><u>My Favourites</u></b></li>
                     <li>Classic Mix</li>
@@ -103,6 +106,9 @@
                     <li>•••</li>
                 </ul>
                 <hr>
+                </div>
+
+                
             </div>
         
         </header>
@@ -110,7 +116,13 @@
       <section class="play">
         <progress value="30" max="100"></progress>
 
-        <p class="song-title">SONG TITLE<br>
-        Artist</p>
+        <div class="bottom">
+            <div class="bottom-left">
+                <div class="box-small"></div>
+                    <p class="song-title">SONG TITLE<br>
+                    Artist</p>
+                </div>
+            </div>
+        </div>
       </section>
 </body>
